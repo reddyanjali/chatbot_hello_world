@@ -4,7 +4,7 @@
 
 import os
 
-# Define the code snippets for 15 programming languages
+# Define the code snippets for 25 programming languages
 code_snippets = {
     "python": 'print("Hello, World!")',
     "java": 'public class HelloWorld { public static void main(String[] args) { System.out.println("Hello, World!"); } }',
@@ -42,7 +42,7 @@ def print_code(language):
 
 # Main chatbot loop
 while True:
-    print("Languages available count: 15\n[1. Python, 2. Java, 3. C, 4. JavaScript, 5. C++, 6. Cobol, 7. Scala, 8. Matlab, 9. C#, 10. Dart, 11. Ruby, 12. R, 13. Swift, 14. Kotlin, 15. PHP, 16. GO, 17. F#, 18. LISP, 19. Algol, 20. Perl, 21. TCL, 22. Type Script, 23. Fortran, 24. Bash, 25. HTML]")
+    print("Languages available count: 25\n[1. Python, 2. Java, 3. C, 4. JavaScript, 5. C++, 6. Cobol, 7. Scala, 8. Matlab, 9. C#, 10. Dart, 11. Ruby, 12. R, 13. Swift, 14. Kotlin, 15. PHP, 16. GO, 17. F#, 18. LISP, 19. Algol, 20. Perl, 21. TCL, 22. Type Script, 23. Fortran, 24. Bash, 25. HTML]")
     user_input = input("Enter a programming language from the list to get the 'Hello, World!' code (or type 'exit' to quit): ").lower()
     
     if user_input == 'exit':
