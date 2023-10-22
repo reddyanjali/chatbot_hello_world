@@ -1,0 +1,52 @@
+#Name: A program that prints "Hello, World!" in 15(as of now) languages.
+#Developer: Anjali Deepak
+#Version 1.0 - Initial Code
+
+import os
+
+# Define the code snippets for 15 programming languages
+code_snippets = {
+    "python": 'print("Hello, World!")',
+    "java": 'public class HelloWorld { public static void main(String[] args) { System.out.println("Hello, World!"); } }',
+    "c": '#include <stdio.h>\nint main() { printf("Hello, World!\\n"); return 0; }',
+    "javascript": 'console.log("Hello, World!");',
+    "c++": '#include <iostream>\nint main() {\nstd::cout << "Hello World";\nreturn 0;}',
+    "cobol":'IDENTIFICATION DIVISION.\nPROGRAM-ID. Hello-world.\nPROCEDURE DIVISION.\nDISPLAY "Hello World".    .',
+    "scala":'object HelloWorld extends App {\nprintIn("Hello World")\n}',
+    "matlab":"disp('Hello World');",
+    "c#":'namespace HelloWorld\n{\nclass Hello {\nstatic void Main(string[] args)\n{\nSystem.Console.WriteLine("Hello World");\n}\n}\n}',
+    "dart":"main(){\nprint('Hello World');\n}",
+    "ruby":"puts 'Hello World'",
+    "r":"cat('Hello World')",
+    "swift":"println('Hello World');",
+    "kotlin":'fun main(args: Array<String>){\nprintln("Hello World")\n}',
+    "php":'echo "Hello World";',
+    "go":"println('Hello World');",
+    "f#":'printfn "Hello World"',
+    "lisp":'(print "Hello World")',
+    "algol":'BEGIN DISPLAY("Hello World") END.',
+    "perl":'#!/usr/bin/perl\nprint "Hello World";',
+    "tcl":'puts "Hello World"',
+    "type script":"console.log 'Hello World'",
+    "fortran":'program helloworld\nprint *, "Hello World"\nend program helloworld',
+    "bash":'echo "Hello World"',
+    "html":'<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<h1>Hello World<h1>\n</body>\n</html>',
+}
+
+# Function to print "Hello, World!" code in a specific language
+def print_code(language):
+    if language in code_snippets:
+        print(code_snippets[language])
+    else:
+        print(f"Sorry, I don't have the 'Hello, World!' code in {language}.")
+
+# Main chatbot loop
+while True:
+    print("Languages available count: 15\n[1. Python, 2. Java, 3. C, 4. JavaScript, 5. C++, 6. Cobol, 7. Scala, 8. Matlab, 9. C#, 10. Dart, 11. Ruby, 12. R, 13. Swift, 14. Kotlin, 15. PHP, 16. GO, 17. F#, 18. LISP, 19. Algol, 20. Perl, 21. TCL, 22. Type Script, 23. Fortran, 24. Bash, 25. HTML]")
+    user_input = input("Enter a programming language from the list to get the 'Hello, World!' code (or type 'exit' to quit): ").lower()
+    
+    if user_input == 'exit':
+        print("See you! Hope you have a nice day!")
+        break
+    
+    print_code(user_input)
