@@ -63,8 +63,3 @@ If you'd like to contribute to this project, you can add code snippets for addit
 ## License
 
 This project is open-source and available under the MIT License.
-
-```Javascript
-
-You can customize this `README.md` file by replacing `your-username` with your actual GitHub username and adding or modifying content to better describe your project. Additionally, you may want to include a license file (e.g., `LICENSE`) in your project directory and provide the relevant licensing information.
-```
